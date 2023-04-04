@@ -60,7 +60,7 @@ body{
 /* end of sidebar  */
 
 
-header styling
+/* header styling */
 
 header{
     display: flex;
@@ -82,4 +82,97 @@ header .logo img{
 header nav .navlinks{
     display: none;
     justify-content: space-around;
+}
+
+/* end of header  */
+
+/* main  */
+
+main{
+    width: 100%;
+    padding: 0 5%;
+}
+
+/* hero section  */
+
+#hero .hero-bg{
+    height: 50vh;
+    background: url(./assets/images/image-web-3-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero .hero-title {
+    padding: 20px 0;
+}
+
+#hero .hero-title h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+
+#hero .hero-desc{
+    padding-bottom: 20px;
+}
+
+#hero .hero-desc p{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+    line-height: 25px;
+
+}
+
+#hero .read-more-btn {
+    padding-bottom: 20px;
+}
+
+#hero .read-more-btn button {
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--soft-red);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 5px;
+}
+
+/* new section  */
+
+#new {
+    background: var(--very-dark-blue);
+    padding: 20px;
+}
+
+#new .header{
+    padding-bottom: 10px;
+}
+
+#new .header h1{
+    color: var(--primary-color);
+}
+
+#new .content-wrapper{
+    padding: 20px 0;
+    border-bottom: 1px solid hsl(36, 100%, 99%);
+}
+
+#new .content-wrapper:last-child{
+    border-bottom: none;
+}
+
+#new .new-contents .new-head{
+    padding-bottom: 10px;
+}
+
+#new .new-contents .new-head h2{
+    font-size: 18px;
+    color: var(--neutral-1);
+}
+
+#new .new-contents .new-desc p{
+    color: var(--grayish-blue);
 }
