@@ -20,7 +20,7 @@ ul{
 body{
     font-family: 'Inter', sans-serif;
     position: relative;
-        max-width: 1400px;
+        max-width: 1500px;
         margin: auto;
 }
 
@@ -303,5 +303,32 @@ main{
     #misc{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #hero .hero-title{
+        padding: 0;
+    }
+
+    #hero .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+    }
+
+    #new .new-head h2{
+        transition: color .2s ease-in-out;
+    }
+
+    #new .new-head h2:hover{
+        color: var(--primary-color);
+    }
+
+    #misc .misc-title h1{
+        transition: color .2s ease;
+    }
+
+    #misc .misc-title h1:hover {
+        color: var(--soft-red);
     }
 }
