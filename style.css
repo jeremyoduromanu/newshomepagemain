@@ -20,6 +20,8 @@ ul{
 body{
     font-family: 'Inter', sans-serif;
     position: relative;
+        max-width: 1400px;
+        margin: auto;
 }
 
 
@@ -97,6 +99,7 @@ header nav .navlinks{
 main{
     width: 100%;
     padding: 0 5%;
+    margin: auto;
 }
 
 /* hero section  */
@@ -144,7 +147,10 @@ main{
     color: white;
     font-family: 'Inter', sans-serif;
     letter-spacing: 5px;
+    transition: background-color .5s ease;
 }
+
+
 
 /* new section  */
 
@@ -256,4 +262,46 @@ main{
 #misc .misc-txt .misc-desc p{
     font-size: 15px;
     color: var(--dark-grayish-blue);
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu-btn{
+        display: none;
+    }
+
+    header nav .navlinks {
+        display: flex;
+        /* justify-content: s; */
+    }
+
+    header nav .navlink{
+        padding:0 0 0 20px;
+    }
+
+    nav .navlink a{
+        text-decoration: none;
+        color: var(--very-dark-blue);
+        font-size: 15px;
+        cursor: pointer;
+        transition: color .5s ease-out;
+    }
+
+    nav .navlink a:hover {
+        color: var(--soft-red);
+    }
+
+    #hero .read-more-btn button:hover {
+        background-color: hsl(240, 100%, 5%);
+    }
+
+    main .flex-on-lg {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 2%;
+    }
+
+    #misc{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
